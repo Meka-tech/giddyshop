@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/giddyshop/static/css/main.7631373a.css",
-    "main.js": "/giddyshop/static/js/main.2d62b023.js",
+    "main.js": "/giddyshop/static/js/main.37cdc6b4.js",
     "static/media/WomanThumbsUp.svg": "/giddyshop/static/media/WomanThumbsUp.8e5a533cf1c2eaa714fd2f61119c6048.svg",
     "static/media/GiddyLogo.svg": "/giddyshop/static/media/GiddyLogo.c09ccb83b889d287f6d44b72b62d3e39.svg",
     "static/media/MessageUsImage.svg": "/giddyshop/static/media/MessageUsImage.ffba0fed3a4e271cc7057777d1e5ee3d.svg",
@@ -12,10 +12,10 @@
     "index.html": "/giddyshop/index.html",
     "static/media/DropdownIcon.svg": "/giddyshop/static/media/DropdownIcon.0b404bdb36b1f86610d8cc55ca822fcb.svg",
     "main.7631373a.css.map": "/giddyshop/static/css/main.7631373a.css.map",
-    "main.2d62b023.js.map": "/giddyshop/static/js/main.2d62b023.js.map"
+    "main.37cdc6b4.js.map": "/giddyshop/static/js/main.37cdc6b4.js.map"
   },
   "entrypoints": [
     "static/css/main.7631373a.css",
-    "static/js/main.2d62b023.js"
+    "static/js/main.37cdc6b4.js"
   ]
 }
