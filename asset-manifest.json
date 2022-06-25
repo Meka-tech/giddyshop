@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/giddyshop/static/css/main.7631373a.css",
-    "main.js": "/giddyshop/static/js/main.e4eae21e.js",
+    "main.js": "/giddyshop/static/js/main.12d55105.js",
     "static/media/ContactUsPng.png": "/giddyshop/static/media/ContactUsPng.4107c8c48f297a50368b.png",
     "static/media/TwoWomen.png": "/giddyshop/static/media/TwoWomen.99a54e786ad1b499d638.png",
     "static/media/PaySvg.svg": "/giddyshop/static/media/PaySvg.ba19906d9bc93d0de1738fb927428a22.svg",
@@ -11,6 +11,7 @@
     "static/media/AboutGiddy.png": "/giddyshop/static/media/AboutGiddy.d91f3591ee695959046a.png",
     "static/media/GiddyLogo.svg": "/giddyshop/static/media/GiddyLogo.c09ccb83b889d287f6d44b72b62d3e39.svg",
     "static/media/VirtualAssistant.svg": "/giddyshop/static/media/VirtualAssistant.4c2a50f945f7edf01398eadd2b13ddee.svg",
+    "static/media/FAQb.svg": "/giddyshop/static/media/FAQb.eff8483d548bb1a759f8cb09367fbaa0.svg",
     "static/media/SmileWoman.svg": "/giddyshop/static/media/SmileWoman.20e951c527370f8d31d08cb952274ec0.svg",
     "static/media/MessageUsImage.svg": "/giddyshop/static/media/MessageUsImage.ffba0fed3a4e271cc7057777d1e5ee3d.svg",
     "static/media/HouseBubble.svg": "/giddyshop/static/media/HouseBubble.d592d8d62ac564a6f49c5fc2e8b39c39.svg",
@@ -30,19 +31,20 @@
     "static/media/CheckmarkBubble.svg": "/giddyshop/static/media/CheckmarkBubble.3f408be7d3c5ae402f0e5cd73aeb66c4.svg",
     "static/media/GiftCardBubble.svg": "/giddyshop/static/media/GiftCardBubble.2c4872d95e5a9adca69c9ae55ccb8e40.svg",
     "static/media/facebookIcon.svg": "/giddyshop/static/media/facebookIcon.2f283ab33c52f9588ad16ddbdef04590.svg",
+    "index.html": "/giddyshop/index.html",
     "static/media/ShoppingBag.svg": "/giddyshop/static/media/ShoppingBag.dd3f9a27fa9322af52368b5d82b69a7d.svg",
     "static/media/OVCBubble.svg": "/giddyshop/static/media/OVCBubble.560fd1a4cd28bdea8e59c5501131b866.svg",
-    "index.html": "/giddyshop/index.html",
     "static/media/LivechatBubble.svg": "/giddyshop/static/media/LivechatBubble.02dc208a16a15ed58339326f548d58c8.svg",
+    "static/media/Arrow.svg": "/giddyshop/static/media/Arrow.60fcad76762138984a771fdd4c592d00.svg",
     "static/media/EmailBubble.svg": "/giddyshop/static/media/EmailBubble.be0495863d13d9640b708c9f99f62f5b.svg",
     "static/media/BitcoinBubble.svg": "/giddyshop/static/media/BitcoinBubble.e764e4d68fcaff26879644fe163fcd62.svg",
     "static/media/TransferBubble.svg": "/giddyshop/static/media/TransferBubble.91e37a978ae8f15b4d9ddc67e7149930.svg",
     "static/media/DropdownIcon.svg": "/giddyshop/static/media/DropdownIcon.0b404bdb36b1f86610d8cc55ca822fcb.svg",
     "main.7631373a.css.map": "/giddyshop/static/css/main.7631373a.css.map",
-    "main.e4eae21e.js.map": "/giddyshop/static/js/main.e4eae21e.js.map"
+    "main.12d55105.js.map": "/giddyshop/static/js/main.12d55105.js.map"
   },
   "entrypoints": [
     "static/css/main.7631373a.css",
-    "static/js/main.e4eae21e.js"
+    "static/js/main.12d55105.js"
   ]
 }
