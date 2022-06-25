@@ -1,21 +1,44 @@
 {
   "files": {
     "main.css": "/giddyshop/static/css/main.7631373a.css",
-    "main.js": "/giddyshop/static/js/main.390566eb.js",
+    "main.js": "/giddyshop/static/js/main.fe786019.js",
+    "static/media/PaySvg.svg": "/giddyshop/static/media/PaySvg.4fc677ead72f2b2f9c0ece5f76f6abf0.svg",
     "static/media/WomanThumbsUp.svg": "/giddyshop/static/media/WomanThumbsUp.8e5a533cf1c2eaa714fd2f61119c6048.svg",
     "static/media/GiddyLogo.svg": "/giddyshop/static/media/GiddyLogo.c09ccb83b889d287f6d44b72b62d3e39.svg",
+    "static/media/AboutUsSvg.svg": "/giddyshop/static/media/AboutUsSvg.2c304ef8ebd311ac8beb4b0d45992b32.svg",
+    "static/media/VirtualAssistant.svg": "/giddyshop/static/media/VirtualAssistant.4c2a50f945f7edf01398eadd2b13ddee.svg",
+    "static/media/SmileWoman.svg": "/giddyshop/static/media/SmileWoman.20e951c527370f8d31d08cb952274ec0.svg",
     "static/media/MessageUsImage.svg": "/giddyshop/static/media/MessageUsImage.ffba0fed3a4e271cc7057777d1e5ee3d.svg",
+    "static/media/HouseBubble.svg": "/giddyshop/static/media/HouseBubble.d592d8d62ac564a6f49c5fc2e8b39c39.svg",
+    "static/media/ServicesBubble.svg": "/giddyshop/static/media/ServicesBubble.4a54d6d8809e8c7ae7c40d3c97ac0946.svg",
+    "static/media/HandyManBubble.svg": "/giddyshop/static/media/HandyManBubble.bb408101fbfb8978814be5be3ddd750f.svg",
+    "static/media/ErrandsBubble.svg": "/giddyshop/static/media/ErrandsBubble.cf498ae02bb21db714bd2923cbd32513.svg",
     "static/media/TwitterIcon.svg": "/giddyshop/static/media/TwitterIcon.400d7fbfd2a762ded676de8c4c72f23b.svg",
     "static/media/WhatsappIcon.svg": "/giddyshop/static/media/WhatsappIcon.084dcc68e200f807b299979c91dce53a.svg",
+    "static/media/CarBubble.svg": "/giddyshop/static/media/CarBubble.da47a946472b5213335d46c650f5f353.svg",
+    "static/media/PaymentBubble.svg": "/giddyshop/static/media/PaymentBubble.585ddd52ebd285e8704f7e6f1e8c5c36.svg",
     "static/media/InstagramIcon.svg": "/giddyshop/static/media/InstagramIcon.168da466c6c23bee4daa2a82119d97c5.svg",
+    "static/media/WhatsappBubble.svg": "/giddyshop/static/media/WhatsappBubble.dabe1abdebd2b48ec1dca73947f64ff6.svg",
+    "static/media/InfoBubble.svg": "/giddyshop/static/media/InfoBubble.fbb59776402d45c55263189ad0dc296b.svg",
+    "static/media/SubBubble.svg": "/giddyshop/static/media/SubBubble.30709ab8e69709bfd530a51ec9126a2c.svg",
+    "static/media/TextBubble.svg": "/giddyshop/static/media/TextBubble.b9e2b88e98f5729f6b1f6c915698c748.svg",
+    "static/media/MoneyBubble.svg": "/giddyshop/static/media/MoneyBubble.3cc8cb69dbe2066e5357bd750bca7b60.svg",
+    "static/media/CheckmarkBubble.svg": "/giddyshop/static/media/CheckmarkBubble.3f408be7d3c5ae402f0e5cd73aeb66c4.svg",
+    "static/media/GiftCardBubble.svg": "/giddyshop/static/media/GiftCardBubble.2c4872d95e5a9adca69c9ae55ccb8e40.svg",
     "static/media/facebookIcon.svg": "/giddyshop/static/media/facebookIcon.a5fbb0c8f9ac83846a4033bbeee359c5.svg",
+    "static/media/ShoppingBag.svg": "/giddyshop/static/media/ShoppingBag.dd3f9a27fa9322af52368b5d82b69a7d.svg",
+    "static/media/OVCBubble.svg": "/giddyshop/static/media/OVCBubble.560fd1a4cd28bdea8e59c5501131b866.svg",
     "index.html": "/giddyshop/index.html",
+    "static/media/LivechatBubble.svg": "/giddyshop/static/media/LivechatBubble.02dc208a16a15ed58339326f548d58c8.svg",
+    "static/media/EmailBubble.svg": "/giddyshop/static/media/EmailBubble.be0495863d13d9640b708c9f99f62f5b.svg",
+    "static/media/BitcoinBubble.svg": "/giddyshop/static/media/BitcoinBubble.e764e4d68fcaff26879644fe163fcd62.svg",
+    "static/media/TransferBubble.svg": "/giddyshop/static/media/TransferBubble.91e37a978ae8f15b4d9ddc67e7149930.svg",
     "static/media/DropdownIcon.svg": "/giddyshop/static/media/DropdownIcon.0b404bdb36b1f86610d8cc55ca822fcb.svg",
     "main.7631373a.css.map": "/giddyshop/static/css/main.7631373a.css.map",
-    "main.390566eb.js.map": "/giddyshop/static/js/main.390566eb.js.map"
+    "main.fe786019.js.map": "/giddyshop/static/js/main.fe786019.js.map"
   },
   "entrypoints": [
     "static/css/main.7631373a.css",
-    "static/js/main.390566eb.js"
+    "static/js/main.fe786019.js"
   ]
 }
