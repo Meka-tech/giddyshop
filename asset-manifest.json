@@ -1,11 +1,14 @@
 {
   "files": {
     "main.css": "/giddyshop/static/css/main.7631373a.css",
-    "main.js": "/giddyshop/static/js/main.8054e9b4.js",
+    "main.js": "/giddyshop/static/js/main.b9d1462a.js",
     "static/media/ContactUsPng.png": "/giddyshop/static/media/ContactUsPng.4107c8c48f297a50368b.png",
+    "static/media/TwoWomen.png": "/giddyshop/static/media/TwoWomen.99a54e786ad1b499d638.png",
     "static/media/PaySvg.svg": "/giddyshop/static/media/PaySvg.4fc677ead72f2b2f9c0ece5f76f6abf0.svg",
     "static/media/SmileWoman.png": "/giddyshop/static/media/SmileWoman.c931834e198f3e6cfa0b.png",
+    "static/media/SingleMan.png": "/giddyshop/static/media/SingleMan.72bd2693c868e10d3af5.png",
     "static/media/HomeBanner.png": "/giddyshop/static/media/HomeBanner.a684d211d4aaad64a2f6.png",
+    "static/media/AboutGiddy.png": "/giddyshop/static/media/AboutGiddy.d91f3591ee695959046a.png",
     "static/media/GiddyLogo.svg": "/giddyshop/static/media/GiddyLogo.c09ccb83b889d287f6d44b72b62d3e39.svg",
     "static/media/VirtualAssistant.svg": "/giddyshop/static/media/VirtualAssistant.4c2a50f945f7edf01398eadd2b13ddee.svg",
     "static/media/SmileWoman.svg": "/giddyshop/static/media/SmileWoman.20e951c527370f8d31d08cb952274ec0.svg",
@@ -36,10 +39,10 @@
     "static/media/TransferBubble.svg": "/giddyshop/static/media/TransferBubble.91e37a978ae8f15b4d9ddc67e7149930.svg",
     "static/media/DropdownIcon.svg": "/giddyshop/static/media/DropdownIcon.0b404bdb36b1f86610d8cc55ca822fcb.svg",
     "main.7631373a.css.map": "/giddyshop/static/css/main.7631373a.css.map",
-    "main.8054e9b4.js.map": "/giddyshop/static/js/main.8054e9b4.js.map"
+    "main.b9d1462a.js.map": "/giddyshop/static/js/main.b9d1462a.js.map"
   },
   "entrypoints": [
     "static/css/main.7631373a.css",
-    "static/js/main.8054e9b4.js"
+    "static/js/main.b9d1462a.js"
   ]
 }
