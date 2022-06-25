@@ -5,6 +5,7 @@ import Card from "../Components/Card/Card";
 import Footer from "../Components/Footer/Footer";
 import MessageUs from "../Components/MessageUs/MessageUs";
 import { ReactComponent as PaySvg } from "../Images/PaySvg.svg";
+import SmileWoman from "../Images/StockImages/SmileWoman.png";
 
 import { ReactComponent as TextBubble } from "../Images/CardIcons/TextBubble.svg";
 import { ReactComponent as InfoBubble } from "../Images/CardIcons/InfoBubble.svg";
@@ -133,7 +134,7 @@ const GiddyPay = () => {
             </div>
           </AsideTextContent>
           <AsideSVG>
-            <Woman />
+            <img src={SmileWoman} alt="Woman Smiling" />
           </AsideSVG>
         </Aside>
       </Body>
@@ -165,7 +166,7 @@ const TextDiv = styled.div`
     margin: 0;
     padding: 0;
     color: rgba(32, 148, 0, 1);
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
@@ -176,7 +177,7 @@ const TextDiv = styled.div`
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.85);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
@@ -206,7 +207,7 @@ const Title = styled.div`
     display: flex;
 
     h1 {
-      font-size: 40px;
+      font-size: 35px;
       line-height: 60px;
       margin: 0;
       padding: 0;
@@ -215,7 +216,7 @@ const Title = styled.div`
       margin-right: 10px;
     }
     h2 {
-      margin-left: 20px;
+      margin-left: 18px;
       font-size: 40px;
       line-height: 60px;
       margin: 0;
@@ -225,7 +226,7 @@ const Title = styled.div`
     }
   }
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px;
     margin: 0;
     padding: 0;
@@ -235,7 +236,7 @@ const Title = styled.div`
   h2 {
     margin-left: 20px;
 
-    font-size: 40px;
+    font-size: 18px;
     line-height: 60px;
     margin: 0;
     padding: 0;
@@ -272,6 +273,10 @@ const Aside = styled.div`
 `;
 const AsideSVG = styled.div`
   flex: 1;
+  margin-top: -60px;
+  img {
+    transform: scale(0.8);
+  }
 `;
 const AsideTextContent = styled.div`
   flex: 1;
@@ -283,7 +288,7 @@ const AsideTextContent = styled.div`
     display: flex;
     width: 400px;
     h1 {
-      font-size: 40px;
+      font-size: 35px;
       line-height: 60px;
       margin: 0;
       padding: 0;
@@ -292,9 +297,9 @@ const AsideTextContent = styled.div`
       margin-right: 10px;
     }
     h2 {
-      margin-right: 20px;
+      margin-right: 18px;
       margin-left: 20px;
-      font-size: 40px;
+      font-size: 35px;
       line-height: 60px;
       margin: 0;
       padding: 0;

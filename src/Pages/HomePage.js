@@ -4,7 +4,7 @@ import Card from "../Components/Card/Card";
 import Footer from "../Components/Footer/Footer";
 import MessageUs from "../Components/MessageUs/MessageUs";
 import Navbar from "../Components/Navbar/Navbar";
-import { ReactComponent as Woman } from "../Images/Pictures/WomanThumbsUp.svg";
+import HomeBanner from "../Images/StockImages/HomeBanner.png";
 import { ReactComponent as TextBubble } from "../Images/CardIcons/TextBubble.svg";
 import { ReactComponent as InfoBubble } from "../Images/CardIcons/InfoBubble.svg";
 import { ReactComponent as CheckmarkBubble } from "../Images/CardIcons/CheckmarkBubble.svg";
@@ -34,7 +34,7 @@ const HomePage = () => {
             <MessageUs />
           </TextDiv>
           <BannerImg>
-            <Woman />
+            <img src={HomeBanner} alt="Home Banner" />
           </BannerImg>
         </Banner>
         <Title>
@@ -144,6 +144,9 @@ const Banner = styled.div`
 `;
 const BannerImg = styled.div`
   flex: 1;
+  img {
+    transform: scale(0.9);
+  }
 `;
 const TextDiv = styled.div`
   display: flex;
@@ -155,7 +158,7 @@ const TextDiv = styled.div`
     margin: 0;
     padding: 0;
     color: rgba(32, 148, 0, 1);
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
@@ -166,7 +169,7 @@ const TextDiv = styled.div`
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.85);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
@@ -196,7 +199,7 @@ const Title = styled.div`
     display: flex;
 
     h1 {
-      font-size: 40px;
+      font-size: 35px;
       line-height: 60px;
       margin: 0;
       padding: 0;
@@ -206,7 +209,7 @@ const Title = styled.div`
     }
     h2 {
       margin-left: 20px;
-      font-size: 40px;
+      font-size: 35px;
       line-height: 60px;
       margin: 0;
       padding: 0;
@@ -215,7 +218,7 @@ const Title = styled.div`
     }
   }
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px;
     margin: 0;
     padding: 0;
@@ -224,7 +227,7 @@ const Title = styled.div`
   }
   h2 {
     margin-left: 20px;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px;
     margin: 0;
     padding: 0;
@@ -272,7 +275,7 @@ const GiddyUpTextContent = styled.div`
     display: flex;
     width: 35%;
     h1 {
-      font-size: 40px;
+      font-size: 35px;
       line-height: 60px;
       margin: 0;
       padding: 0;
@@ -282,7 +285,7 @@ const GiddyUpTextContent = styled.div`
     }
     h2 {
       margin-left: 20px;
-      font-size: 40px;
+      font-size: 35px;
       line-height: 60px;
       margin: 0;
       padding: 0;

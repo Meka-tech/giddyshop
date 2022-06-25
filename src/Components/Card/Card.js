@@ -34,7 +34,7 @@ const Title = styled.div`
   padding-bottom: 20px;
 `;
 const Description = styled.div`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   width: 95%;
