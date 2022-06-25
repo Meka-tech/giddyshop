@@ -18,9 +18,11 @@ const Navbar = ({ active, dropdownActive }) => {
             <h1>Home</h1>
           </Link>
         </NavItem>
-        <NavItem active={active} name="GiddyPay">
-          <h1>GiddyPay</h1>
-        </NavItem>
+        <Link to="/giddy-pay" style={{ textDecoration: "none" }}>
+          <NavItem active={active} name="GiddyPay">
+            <h1>GiddyPay</h1>
+          </NavItem>
+        </Link>
         <NavItem active={active} name="Company">
           <h1>Company</h1>
           <Dropdown active={dropdownActive} />
@@ -69,7 +71,7 @@ const NavItem = styled.div`
     cursor: pointer;
     text-decoration: none;
     color: ${(props) =>
-      props.active === props.name ? "rgba(32, 148, 0, 1)" : null};
+      props.active === props.name ? "rgba(32, 148, 0, 1)" : "black"};
   }
 `;
 const Button = styled.div`

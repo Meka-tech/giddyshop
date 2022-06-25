@@ -1,40 +1,45 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "../Components/Navbar/Navbar";
 import Card from "../Components/Card/Card";
 import Footer from "../Components/Footer/Footer";
 import MessageUs from "../Components/MessageUs/MessageUs";
-import Navbar from "../Components/Navbar/Navbar";
-import { ReactComponent as Woman } from "../Images/Pictures/WomanThumbsUp.svg";
+import { ReactComponent as PaySvg } from "../Images/PaySvg.svg";
+
 import { ReactComponent as TextBubble } from "../Images/CardIcons/TextBubble.svg";
 import { ReactComponent as InfoBubble } from "../Images/CardIcons/InfoBubble.svg";
 import { ReactComponent as CheckmarkBubble } from "../Images/CardIcons/CheckmarkBubble.svg";
 
-import { ReactComponent as ShoppingBag } from "../Images/UtilityCardIcon/ShoppingBag.svg";
-import { ReactComponent as CarBubble } from "../Images/UtilityCardIcon/CarBubble.svg";
-import { ReactComponent as ErrandsBubble } from "../Images/UtilityCardIcon/ErrandsBubble.svg";
-import { ReactComponent as HandyManBubble } from "../Images/UtilityCardIcon/HandyManBubble.svg";
+import { ReactComponent as BitcoinBubble } from "../Images/UtilityCardIcon/BitcoinBubble.svg";
+import { ReactComponent as SubBubble } from "../Images/UtilityCardIcon/SubBubble.svg";
+import { ReactComponent as GiftCardBubble } from "../Images/UtilityCardIcon/GiftCardBubble.svg";
+import { ReactComponent as OVCBubble } from "../Images/UtilityCardIcon/OVCBubble.svg";
+import { ReactComponent as TransferBubble } from "../Images/UtilityCardIcon/TransferBubble.svg";
+import { ReactComponent as MoneyBubble } from "../Images/UtilityCardIcon/MoneyBubble.svg";
 import { ReactComponent as PaymentBubble } from "../Images/UtilityCardIcon/PaymentBubble.svg";
-import { ReactComponent as ServicesBubble } from "../Images/UtilityCardIcon/ServicesBubble.svg";
-import { ReactComponent as HouseBubble } from "../Images/UtilityCardIcon/HouseBubble.svg";
 import UtilityCard from "../Components/Card/UtilityCard";
+import { ReactComponent as Woman } from "../Images/SmileWoman.svg";
 
-import { ReactComponent as VirtualAssistant } from "../Images/VirtualAssistant.svg";
-const HomePage = () => {
+const GiddyPay = () => {
   return (
     <Container>
-      <Navbar active="Home" />
+      <Navbar active="GiddyPay" />
       <Body>
         <Banner>
           <TextDiv>
-            <h1>Your one stop service provider for all your needs</h1>
+            <h1>
+              Introducing <b>Giddy</b>Pay, your financial service platform for
+              all your monetary needs
+            </h1>
             <h3>
-              Skip the hassle and let us handle your daily tasks while you sit
-              back, relax and experience tranquility like never before!
+              Skip the inconvinece of having to pay bills or perform online
+              transactions and let us sort out all your financial needs swiftly
+              with no risks at all.
             </h3>
             <MessageUs />
           </TextDiv>
           <BannerImg>
-            <Woman />
+            <PaySvg />
           </BannerImg>
         </Banner>
         <Title>
@@ -58,30 +63,30 @@ const HomePage = () => {
           <span>
             <h1>Do more with </h1>
             <h2>
-              <b>Giddy</b>Shop
+              <b>Giddy</b>Pay
             </h2>
           </span>
         </Title>
         <Utilities>
           <UtilityCard
-            icon={<ShoppingBag />}
-            description="We’ll help you shop from Nigeria or Dubai and have it delivered to you anywhere in the world."
-            title="Personal Shopping"
+            icon={<BitcoinBubble />}
+            description="We’ll help you buy & sell crypto currencies in no time at an amazing rate."
+            title="Buy & Sell Crypto"
           />
           <UtilityCard
-            icon={<CarBubble />}
-            description="Book a cab or rent a car anywhere in Nigeria or Dubai in next to no time."
-            title="Cab & Car Rentals"
+            icon={<SubBubble />}
+            description="We’ll help pay for your online subscriptions like Netflix, DSTV, Etc in no time at all."
+            title="Online Subscriptions"
           />
           <UtilityCard
-            icon={<HouseBubble />}
-            description="Make hotel and Airbnb reseravations anywhere in Nigeria or Dubai."
-            title="Booking & Reservations"
+            icon={<GiftCardBubble />}
+            description="Buy & Sell your giftcards and receive instant payment at an amazing rate."
+            title="Buy & Sell Giftcards"
           />
           <UtilityCard
-            icon={<HandyManBubble />}
-            description="Hire a handyman (Plumbers, Electrians, Carpenters, etc) anywhere in Nigeria or Dubai."
-            title="Handyman Hiring"
+            icon={<OVCBubble />}
+            description="Perform over the counter deals at our physical office in Nigeria or Dubai."
+            title="Over-the-Counter"
           />
           <UtilityCard
             icon={<PaymentBubble />}
@@ -89,43 +94,48 @@ const HomePage = () => {
             title="Payments & POS"
           />
           <UtilityCard
-            icon={<ErrandsBubble />}
-            description="We’ll help with personal errands or pickups anywhere within Nigeria or Dubai."
-            title="Errands & Delivery"
+            icon={<TransferBubble />}
+            description="Send and receive money from anyone in the world at a good rate."
+            title="International Transfer"
           />
           <UtilityCard
-            icon={<ServicesBubble />}
-            description="Make custom requests and we’ll deliver as long as it’s anywhere within Nigeria or Dubai."
-            title="Custom Services"
+            icon={<MoneyBubble />}
+            description="Make instant and secure payments with perfect money at an ideal level."
+            title="Perfect Money"
           />
         </Utilities>
-        <GiddyUp>
-          <GiddyUpSVG>
-            {" "}
-            <VirtualAssistant />
-          </GiddyUpSVG>
-
-          <GiddyUpTextContent>
+        <Aside>
+          <AsideTextContent>
             <span>
               <h1>
-                <b>#</b>
+                <b>You + </b>
               </h1>
               <h2>
                 <b>Giddy</b>Up
               </h2>
+              <h1>
+                <b style={{ marginLeft: "10px" }}> = </b>
+              </h1>
             </span>
+            <span>
+              <h1>
+                <b> a simpler life</b>
+              </h1>
+            </span>
+
             <h3>
-              Aren’t you tired of the unnecessary delay caused when trying to
-              get a particular service or help? It’s time to #GiddyUp! Let us
-              handle your boring tasks because with GiddyShop good things come
-              to everyone and not just those who wait.{" "}
+              We were invented to suit your busy lifestyle and make monetary
+              services more attainable and secure for you.
             </h3>
             <div>
               {" "}
               <MessageUs />
             </div>
-          </GiddyUpTextContent>
-        </GiddyUp>
+          </AsideTextContent>
+          <AsideSVG>
+            <Woman />
+          </AsideSVG>
+        </Aside>
       </Body>
       <Footer />
     </Container>
@@ -224,6 +234,7 @@ const Title = styled.div`
   }
   h2 {
     margin-left: 20px;
+
     font-size: 40px;
     line-height: 60px;
     margin: 0;
@@ -252,17 +263,17 @@ const Utilities = styled.div`
   background-color: rgba(32, 148, 0, 0.05);
   box-shadow: 0px 4px 4px 0px rgba(32, 148, 0, 0.2);
 `;
-const GiddyUp = styled.div`
+const Aside = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 600px;
   padding: 20px 50px;
 `;
-const GiddyUpSVG = styled.div`
+const AsideSVG = styled.div`
   flex: 1;
 `;
-const GiddyUpTextContent = styled.div`
+const AsideTextContent = styled.div`
   flex: 1;
   text-align: left;
   display: flex;
@@ -270,7 +281,7 @@ const GiddyUpTextContent = styled.div`
   margin-bottom: 80px;
   span {
     display: flex;
-    width: 35%;
+    width: 400px;
     h1 {
       font-size: 40px;
       line-height: 60px;
@@ -281,6 +292,7 @@ const GiddyUpTextContent = styled.div`
       margin-right: 10px;
     }
     h2 {
+      margin-right: 20px;
       margin-left: 20px;
       font-size: 40px;
       line-height: 60px;
@@ -301,10 +313,10 @@ const GiddyUpTextContent = styled.div`
     margin-top: 50px;
   }
   div {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 `;
 
-export default HomePage;
+export default GiddyPay;

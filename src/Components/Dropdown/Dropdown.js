@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as DropdownIcon } from "../../Images/DropdownIcon.svg";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Dropdown = ({ active }) => {
   const [dropdownActive, setDropdownActive] = useState(false);
@@ -13,7 +14,9 @@ const Dropdown = ({ active }) => {
       <DropdownIcon />
       <NavContainer style={{ display: dropdownActive ? "flex" : "none" }}>
         <NavItem active={active} name="Contact Us">
-          <h3>Contact Us</h3>
+          <Link to="/contact-us" style={{ textDecoration: "none" }}>
+            <h3>Contact Us</h3>
+          </Link>
         </NavItem>
         <NavItem active={active} name="About Us">
           <h3>About Us</h3>
@@ -60,6 +63,7 @@ const NavItem = styled.div`
     margin: 0;
     padding: 0;
     font-weight: 500;
+    color: ${(props) => (props.active === props.name ? "white" : "black")};
   }
 `;
 
