@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/giddyshop/static/css/main.9392d191.css",
-    "main.js": "/giddyshop/static/js/main.4a7520e7.js",
+    "main.js": "/giddyshop/static/js/main.bb2b6224.js",
     "static/media/ContactUsPng.png": "/giddyshop/static/media/ContactUsPng.4107c8c48f297a50368b.png",
     "static/media/TwoWomen.png": "/giddyshop/static/media/TwoWomen.99a54e786ad1b499d638.png",
-    "static/media/PaySvg.svg": "/giddyshop/static/media/PaySvg.ba19906d9bc93d0de1738fb927428a22.svg",
+    "static/media/PaySvg.svg": "/giddyshop/static/media/PaySvg.7e56460af7147b27c295d13b3e2a337b.svg",
     "static/media/SmileWoman.png": "/giddyshop/static/media/SmileWoman.c931834e198f3e6cfa0b.png",
     "static/media/SingleMan.png": "/giddyshop/static/media/SingleMan.72bd2693c868e10d3af5.png",
     "static/media/HomeBanner.png": "/giddyshop/static/media/HomeBanner.a684d211d4aaad64a2f6.png",
@@ -29,6 +29,7 @@
     "static/media/SubBubble.svg": "/giddyshop/static/media/SubBubble.30709ab8e69709bfd530a51ec9126a2c.svg",
     "static/media/TextBubble.svg": "/giddyshop/static/media/TextBubble.b9e2b88e98f5729f6b1f6c915698c748.svg",
     "static/media/MoneyBubble.svg": "/giddyshop/static/media/MoneyBubble.3cc8cb69dbe2066e5357bd750bca7b60.svg",
+    "static/media/EX.svg": "/giddyshop/static/media/EX.80545c35141b64e2b763fb2f7ff6a68b.svg",
     "static/media/CheckmarkBubble.svg": "/giddyshop/static/media/CheckmarkBubble.3f408be7d3c5ae402f0e5cd73aeb66c4.svg",
     "static/media/GiftCardBubble.svg": "/giddyshop/static/media/GiftCardBubble.2c4872d95e5a9adca69c9ae55ccb8e40.svg",
     "static/media/facebookIcon.svg": "/giddyshop/static/media/facebookIcon.2f283ab33c52f9588ad16ddbdef04590.svg",
@@ -41,12 +42,12 @@
     "static/media/BitcoinBubble.svg": "/giddyshop/static/media/BitcoinBubble.e764e4d68fcaff26879644fe163fcd62.svg",
     "static/media/TransferBubble.svg": "/giddyshop/static/media/TransferBubble.91e37a978ae8f15b4d9ddc67e7149930.svg",
     "static/media/Menu.svg": "/giddyshop/static/media/Menu.b53915e3b51c6ea19f6f6182578a4b1d.svg",
-    "static/media/DropdownIcon.svg": "/giddyshop/static/media/DropdownIcon.0b404bdb36b1f86610d8cc55ca822fcb.svg",
+    "static/media/DropdownIcon.svg": "/giddyshop/static/media/DropdownIcon.a82f6b3e9413c78df610a9c5d2f4b9fc.svg",
     "main.9392d191.css.map": "/giddyshop/static/css/main.9392d191.css.map",
-    "main.4a7520e7.js.map": "/giddyshop/static/js/main.4a7520e7.js.map"
+    "main.bb2b6224.js.map": "/giddyshop/static/js/main.bb2b6224.js.map"
   },
   "entrypoints": [
     "static/css/main.9392d191.css",
-    "static/js/main.4a7520e7.js"
+    "static/js/main.bb2b6224.js"
   ]
 }
