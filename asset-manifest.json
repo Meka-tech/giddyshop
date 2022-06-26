@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/giddyshop/static/css/main.7631373a.css",
-    "main.js": "/giddyshop/static/js/main.8bd3a646.js",
+    "main.css": "/giddyshop/static/css/main.9392d191.css",
+    "main.js": "/giddyshop/static/js/main.c46c1950.js",
     "static/media/ContactUsPng.png": "/giddyshop/static/media/ContactUsPng.4107c8c48f297a50368b.png",
     "static/media/TwoWomen.png": "/giddyshop/static/media/TwoWomen.99a54e786ad1b499d638.png",
     "static/media/PaySvg.svg": "/giddyshop/static/media/PaySvg.ba19906d9bc93d0de1738fb927428a22.svg",
@@ -40,12 +40,13 @@
     "static/media/EmailBubble.svg": "/giddyshop/static/media/EmailBubble.be0495863d13d9640b708c9f99f62f5b.svg",
     "static/media/BitcoinBubble.svg": "/giddyshop/static/media/BitcoinBubble.e764e4d68fcaff26879644fe163fcd62.svg",
     "static/media/TransferBubble.svg": "/giddyshop/static/media/TransferBubble.91e37a978ae8f15b4d9ddc67e7149930.svg",
+    "static/media/Menu.svg": "/giddyshop/static/media/Menu.b53915e3b51c6ea19f6f6182578a4b1d.svg",
     "static/media/DropdownIcon.svg": "/giddyshop/static/media/DropdownIcon.0b404bdb36b1f86610d8cc55ca822fcb.svg",
-    "main.7631373a.css.map": "/giddyshop/static/css/main.7631373a.css.map",
-    "main.8bd3a646.js.map": "/giddyshop/static/js/main.8bd3a646.js.map"
+    "main.9392d191.css.map": "/giddyshop/static/css/main.9392d191.css.map",
+    "main.c46c1950.js.map": "/giddyshop/static/js/main.c46c1950.js.map"
   },
   "entrypoints": [
-    "static/css/main.7631373a.css",
-    "static/js/main.8bd3a646.js"
+    "static/css/main.9392d191.css",
+    "static/js/main.c46c1950.js"
   ]
 }
