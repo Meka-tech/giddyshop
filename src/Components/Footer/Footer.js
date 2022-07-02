@@ -119,7 +119,7 @@ const Footer = () => {
 };
 const Container = styled.div`
   background-color: rgba(32, 148, 0, 0.1);
-  height: 350px;
+  height: 320px;
   padding: 10px;
   display: flex;
   font-family: "Montserrat", sans-serif;

@@ -285,7 +285,7 @@ const TextDiv = styled.div`
     font-size: 16px;
     font-weight: 600;
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     line-height: 35px;
     letter-spacing: 4%;
     vertical-align: top;
@@ -509,11 +509,12 @@ const GiddyUpTextContent = styled.div`
       color: black;
       font-weight: 500;
       margin-right: 10px;
-      ${mobile({
+
+      ${tab({
         fontSize: "30px",
         marginRight: "5px",
       })}
-      ${tab({
+      ${mobile({
         fontSize: "30px",
         marginRight: "5px",
       })}
@@ -543,19 +544,19 @@ const GiddyUpTextContent = styled.div`
     text-align: left;
     margin-bottom: 40px;
     margin-top: 20px;
-    ${mobile({
+    ${tab({
       textAlign: "center",
       fontSize: "20px",
-      lineHeight: "26px",
+      lineHeight: "28px",
       width: "75%",
       marginLeft: "auto",
       marginRight: "auto",
       marginBottom: "20px",
     })}
-    ${tab({
+    ${mobile({
       textAlign: "center",
       fontSize: "20px",
-      lineHeight: "26px",
+      lineHeight: "28px",
       width: "75%",
       marginLeft: "auto",
       marginRight: "auto",
@@ -566,14 +567,15 @@ const GiddyUpTextContent = styled.div`
     width: 80%;
     display: flex;
     justify-content: flex-start;
+
+    ${tab({
+      width: "100%",
+      justifyContent: "center",
+    })}
     ${mobile({
       width: "100%",
       justifyContent: "center",
       transform: "scale(0.9)",
-    })}
-    ${tab({
-      width: "100%",
-      justifyContent: "center",
     })}
   }
 `;
