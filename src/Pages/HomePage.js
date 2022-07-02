@@ -33,8 +33,9 @@ const HomePage = () => {
                 Skip the hassle and let us handle your daily tasks while you sit
                 back, relax and experience tranquility like never before!
               </h3>
-
-              <MessageUs />
+              <span>
+                <MessageUs />
+              </span>
             </TextDiv>
             <BannerImg>
               <img src={HomeBanner} alt="Home Banner" />
@@ -229,6 +230,10 @@ const TextDiv = styled.div`
   flex: 1.5;
   margin-left: 40px;
   margin-bottom: 40px;
+  align-items: flex-start;
+  ${fourK({
+    justifyContent: "center",
+  })}
 
   ${tab({
     textAlign: "center",

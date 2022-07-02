@@ -40,9 +40,9 @@ const GiddyPay = () => {
                 transactions and let us sort out all your financial needs
                 swiftly with no risks at all.
               </h3>
-              <div>
+              <span>
                 <MessageUs />
-              </div>
+              </span>
             </TextDiv>
             <BannerImg>
               <PaySvg />
@@ -169,9 +169,9 @@ const Banner = styled.div`
   padding-top: 30px;
   div {
     display: flex;
+    justify-content: left;
 
     ${fourK({
-      display: "flex",
       width: "fit-content",
       marginLeft: "auto",
       marginRight: "auto",
