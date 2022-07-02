@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../Components/Navbar/Navbar";
 import Card from "../Components/Card/Card";
 import Footer from "../Components/Footer/Footer";
+import { mobile, tab, fourK } from "../responsive";
 import MessageUs from "../Components/MessageUs/MessageUs";
 import { ReactComponent as PaySvg } from "../Images/PaySvg.svg";
 import SmileWoman from "../Images/StockImages/SmileWoman.png";
@@ -20,6 +21,7 @@ import { ReactComponent as MoneyBubble } from "../Images/UtilityCardIcon/MoneyBu
 import { ReactComponent as PaymentBubble } from "../Images/UtilityCardIcon/PaymentBubble.svg";
 import UtilityCard from "../Components/Card/UtilityCard";
 import { ReactComponent as Woman } from "../Images/SmileWoman.svg";
+import FooterPay from "../Components/Footer/FooterPay";
 
 const GiddyPay = () => {
   return (
@@ -27,21 +29,25 @@ const GiddyPay = () => {
       <Navbar active="GiddyPay" />
       <Body>
         <Banner>
-          <TextDiv>
-            <h1>
-              Introducing <b>Giddy</b>Pay, your financial service platform for
-              all your monetary needs
-            </h1>
-            <h3>
-              Skip the inconvinece of having to pay bills or perform online
-              transactions and let us sort out all your financial needs swiftly
-              with no risks at all.
-            </h3>
-            <MessageUs />
-          </TextDiv>
-          <BannerImg>
-            <PaySvg />
-          </BannerImg>
+          <div>
+            <TextDiv>
+              <h1>
+                Introducing <b>Giddy</b>Pay, your financial service platform for
+                all your monetary needs
+              </h1>
+              <h3>
+                Skip the inconvinece of having to pay bills or perform online
+                transactions and let us sort out all your financial needs
+                swiftly with no risks at all.
+              </h3>
+              <div>
+                <MessageUs />
+              </div>
+            </TextDiv>
+            <BannerImg>
+              <PaySvg />
+            </BannerImg>
+          </div>
         </Banner>
         <Title>
           <h1>How it works</h1>
@@ -108,20 +114,26 @@ const GiddyPay = () => {
         <Aside>
           <AsideTextContent>
             <span>
-              <h1>
-                <b>You + </b>
-              </h1>
-              <h2>
-                <b>Giddy</b>Up
-              </h2>
-              <h1>
-                <b style={{ marginLeft: "10px" }}> = </b>
-              </h1>
-            </span>
-            <span>
-              <h1>
-                <b> a simpler life</b>
-              </h1>
+              {" "}
+              <div>
+                {" "}
+                <span>
+                  <h1>
+                    <b>You + </b>
+                  </h1>
+                  <h2>
+                    <b>Giddy</b>Up
+                  </h2>
+                  <h1>
+                    <b style={{ marginLeft: "10px" }}> = </b>
+                  </h1>
+                </span>
+                <span>
+                  <h1>
+                    <b> a simpler life</b>
+                  </h1>
+                </span>
+              </div>
             </span>
 
             <h3>
@@ -138,13 +150,16 @@ const GiddyPay = () => {
           </AsideSVG>
         </Aside>
       </Body>
-      <Footer />
+      <FooterPay />
     </Container>
   );
 };
 const Container = styled.div``;
 const Body = styled.div`
   height: fit-content;
+  margin-top: 55px;
+  ${mobile({ marginTop: "48px" })}
+  ${tab({ marginTop: "48px" })}
 `;
 const Banner = styled.div`
   display: flex;
@@ -152,8 +167,69 @@ const Banner = styled.div`
   background-color: rgba(32, 148, 0, 0.2);
   padding: 40px;
   padding-top: 30px;
+  div {
+    display: flex;
+
+    ${fourK({
+      display: "flex",
+      width: "fit-content",
+      marginLeft: "auto",
+      marginRight: "auto",
+      maxWidth: "2000px",
+    })}
+    ${mobile({
+      justifyContent: "center",
+      alignItems: "center",
+    })}
+        ${tab({
+      justifyContent: "center",
+      alignItems: "center",
+    })}
+  }
+  ${tab({
+    position: "relative",
+    height: "500px",
+    maxHeight: "fit-content",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "20px",
+    paddingBottom: "40px",
+  })}
+  ${mobile({
+    position: "relative",
+    height: "fit-content",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "20px",
+    paddingBottom: "40px",
+  })}
 `;
 const BannerImg = styled.div`
+  ${tab({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+    transform: "scale(0.7)",
+    marginTop: "80px",
+  })}
+  ${mobile({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+    transform: "scale(0.7)",
+    marginTop: "80px",
+  })}
+
   flex: 1;
 `;
 const TextDiv = styled.div`
@@ -162,47 +238,125 @@ const TextDiv = styled.div`
   align-items: flex-start;
   text-align: left;
   flex: 1;
+  margin-left: 40px;
+  ${tab({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
+
+  ${mobile({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
   h1 {
     margin: 0;
     padding: 0;
     color: rgba(32, 148, 0, 1);
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
     line-height: 60px;
     vertical-align: top;
+    ${tab({
+      fontSize: "24px",
+      lineHeight: "26px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "300px",
+    })}
+    ${mobile({
+      fontSize: "24px",
+      lineHeight: "26px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "300px",
+    })}
   }
   h3 {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.85);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
     line-height: 35px;
     letter-spacing: 4%;
     vertical-align: top;
+    ${tab({
+      lineHeight: "21.6px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    })}
+    ${mobile({
+      lineHeight: "21.6px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    })}
+  }
+  div {
+    ${mobile({
+      marginLeft: "auto",
+      marginRight: "auto",
+      transform: "scale(0.95)",
+    })}
   }
 `;
 const Cards = styled.div`
-  height: 300px;
-  padding: 10px 40px;
+  height: 260px;
+  padding: 50px 40px;
+  padding-top: 0px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 2000px;
   justify-content: space-between;
   align-items: center;
+  max-height: 460px;
+  height: fit-content;
+  ${mobile({
+    flexWrap: "noWrap",
+    flexDirection: "column",
+    width: "100vw",
+    height: "700px",
+    maxHeight: "fit-content",
+    padding: "0",
+    marginTop: "0",
+    paddingBottom: "50px",
+  })}
+  ${tab({
+    flexWrap: "noWrap",
+    flexDirection: "column",
+    width: "100vw",
+    height: "700px",
+    padding: "0",
+    marginTop: "0",
+    paddingBottom: "50px",
+    maxHeight: "fit-content",
+  })}
 `;
 const Title = styled.div`
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   width: 45%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
+  ${mobile({ width: "80%", marginBottom: "-20px" })}
+  ${tab({ width: "80%", marginBottom: "-20px" })}
   span {
     display: flex;
 
@@ -214,6 +368,8 @@ const Title = styled.div`
       color: black;
       font-weight: 500;
       margin-right: 10px;
+      ${mobile({ fontSize: "22px" })}
+      ${tab({ fontSize: "22px" })}
     }
     h2 {
       margin-left: 18px;
@@ -223,6 +379,8 @@ const Title = styled.div`
       padding: 0;
       color: rgba(32, 148, 0, 1);
       font-weight: 600;
+      ${mobile({ fontSize: "22px" })}
+      ${tab({ fontSize: "22px" })}
     }
   }
   h1 {
@@ -231,7 +389,23 @@ const Title = styled.div`
     margin: 0;
     padding: 0;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    ${tab({
+      fontSize: "23px",
+      lineHeight: "30px",
+      paddingBottom: "20px",
+      marginBottom: "15px",
+      marginTop: "10px",
+    })}
+    ${mobile({
+      fontSize: "23px",
+      lineHeight: "30px",
+      paddingBottom: "20px",
+      marginBottom: "15px",
+      marginTop: "10px",
+    })}
   }
   h2 {
     margin-left: 20px;
@@ -242,6 +416,8 @@ const Title = styled.div`
     padding: 0;
     color: rgba(32, 148, 0, 1);
     font-weight: 600;
+    ${tab({ fontSize: "22px" })}
+    ${mobile({ fontSize: "22px" })}
   }
   h3 {
     font-size: 40px;
@@ -263,6 +439,8 @@ const Utilities = styled.div`
 
   background-color: rgba(32, 148, 0, 0.05);
   box-shadow: 0px 4px 4px 0px rgba(32, 148, 0, 0.2);
+  ${tab({ gridTemplateColumns: "auto auto" })}
+  ${mobile({ display: "flex", flexDirection: "column" })}
 `;
 const Aside = styled.div`
   display: flex;
@@ -270,12 +448,61 @@ const Aside = styled.div`
   align-items: center;
   height: 600px;
   padding: 20px 50px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  ${tab({
+    position: "relative",
+    height: "fit-Content",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "50px",
+    paddingBottom: "100px",
+  })}
+  ${mobile({
+    position: "relative",
+    height: "fit-Content",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "50px",
+    paddingBottom: "100px",
+  })}
 `;
 const AsideSVG = styled.div`
   flex: 1;
   margin-top: -60px;
+  ${tab({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+    transform: "scale(0.6)",
+    marginTop: "120px",
+  })}
+  ${mobile({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+    transform: "scale(0.6)",
+    marginTop: "120px",
+  })}
   img {
-    transform: scale(0.8);
+    transform: scale(1);
+    ${tab({
+      transform: "scale(0.85)",
+    })}
+    ${mobile({
+      transform: "scale(0.85)",
+    })}
   }
 `;
 const AsideTextContent = styled.div`
@@ -284,9 +511,45 @@ const AsideTextContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
+  ${tab({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
+  ${mobile({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
+
   span {
     display: flex;
     width: 400px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      ${tab({
+        marginBottom: "300px",
+      })}
+      ${mobile({
+        marginBottom: "300px",
+      })}
+    }
+    ${tab({
+      width: "100%",
+      marginBottom: "0px",
+      justifyContent: "center",
+    })}
+    ${mobile({
+      width: "100%",
+      marginBottom: "0px",
+      justifyContent: "center",
+    })}
     h1 {
       font-size: 35px;
       line-height: 60px;
@@ -295,6 +558,14 @@ const AsideTextContent = styled.div`
       color: black;
       font-weight: 500;
       margin-right: 10px;
+      ${tab({
+        fontSize: "30px",
+        marginRight: "5px",
+      })}
+      ${mobile({
+        fontSize: "30px",
+        marginRight: "5px",
+      })}
     }
     h2 {
       margin-right: 18px;
@@ -305,6 +576,12 @@ const AsideTextContent = styled.div`
       padding: 0;
       color: rgba(32, 148, 0, 1);
       font-weight: 600;
+      ${tab({
+        fontSize: "30px",
+      })}
+      ${mobile({
+        fontSize: "30px",
+      })}
     }
   }
   h3 {
@@ -312,15 +589,42 @@ const AsideTextContent = styled.div`
     padding: 0;
     font-weight: 500;
     line-height: 45px;
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 400px;
+    ${tab({
+      textAlign: "center",
+      fontSize: "20px",
+      lineHeight: "26px",
+      width: "75%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "20px",
+    })}
+    ${mobile({
+      textAlign: "center",
+      fontSize: "20px",
+      lineHeight: "26px",
+      width: "75%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "20px",
+    })}
   }
   div {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    ${tab({
+      width: "100%",
+      justifyContent: "center",
+    })}
+    ${mobile({
+      width: "100%",
+      justifyContent: "center",
+    })}
   }
 `;
 

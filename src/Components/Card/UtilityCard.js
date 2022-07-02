@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { mobile, tab } from "../../responsive";
 const UtilityCard = ({ icon, title, description }) => {
   return (
     <Container>
@@ -28,6 +28,8 @@ const Title = styled.div`
   line-height: 29.26px;
   font-weight: 500;
   margin: 10px 0px;
+  ${tab({ fontSize: "19px" })}
+  ${mobile({ fontSize: "19px" })}
 `;
 const Description = styled.div`
   text-align: center;
@@ -35,6 +37,8 @@ const Description = styled.div`
   font-weight: 500;
   line-height: 25px;
   color: black;
+  ${tab({ fontSize: "14px" })}
+  ${mobile({ fontSize: "14px" })}
 `;
 
 export default UtilityCard;

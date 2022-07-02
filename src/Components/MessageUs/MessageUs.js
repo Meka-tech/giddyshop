@@ -5,7 +5,15 @@ import { ReactComponent as MessageIcon } from "../../Images/MessageUsImage.svg";
 const MessageUs = () => {
   return (
     <Container>
-      <MessageIcon />
+      <a
+        href="https://wa.me/message/QHH7NMUFHUV2L1"
+        target="_blank"
+        rel="noreferrer"
+        style={{ textDecoration: "none" }}
+      >
+        {" "}
+        <MessageIcon />
+      </a>
     </Container>
   );
 };

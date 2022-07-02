@@ -9,7 +9,7 @@ import { ReactComponent as Twitter } from "../../Images/SocialMediaLogos/Twitter
 import { ReactComponent as Whatsapp } from "../../Images/SocialMediaLogos/WhatsappIcon.svg";
 import { mobile, tab } from "../../responsive";
 
-const Footer = () => {
+const FooterPay = () => {
   return (
     <Container>
       <FirstColumn>
@@ -20,7 +20,7 @@ const Footer = () => {
         <Contacts>
           <SMIcons>
             <a
-              href=" https://www.facebook.com/GiddyShopAfrica/"
+              href=" https://www.facebook.com/GiddyPay/"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
@@ -38,7 +38,7 @@ const Footer = () => {
               <Whatsapp style={{ cursor: "pointer" }} />
             </a>
             <a
-              href="https://instagram.com/giddyshop?igshid=YmMyMTA2M2Y="
+              href="https://instagram.com/giddypayments?igshid=YmMyMTA2M2Y="
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
@@ -47,7 +47,7 @@ const Footer = () => {
               <Instagram style={{ cursor: "pointer" }} />
             </a>
             <a
-              href="https://twitter.com/giddyshop?s=11"
+              href="https://twitter.com/giddypay?s=11"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
@@ -222,4 +222,4 @@ const OtherColumns = styled.div`
     cursor: pointer;
   }
 `;
-export default Footer;
+export default FooterPay;

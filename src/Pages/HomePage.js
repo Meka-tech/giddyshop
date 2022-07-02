@@ -19,23 +19,27 @@ import { ReactComponent as HouseBubble } from "../Images/UtilityCardIcon/HouseBu
 import UtilityCard from "../Components/Card/UtilityCard";
 
 import { ReactComponent as VirtualAssistant } from "../Images/VirtualAssistant.svg";
+import { mobile, tab, fourK } from "../responsive";
 const HomePage = () => {
   return (
     <Container>
       <Navbar active="Home" />
       <Body>
         <Banner>
-          <TextDiv>
-            <h1>Your one stop service provider for all your needs</h1>
-            <h3>
-              Skip the hassle and let us handle your daily tasks while you sit
-              back, relax and experience tranquility like never before!
-            </h3>
-            <MessageUs />
-          </TextDiv>
-          <BannerImg>
-            <img src={HomeBanner} alt="Home Banner" />
-          </BannerImg>
+          <div>
+            <TextDiv>
+              <h1>Your one stop service provider for all your needs</h1>
+              <h3>
+                Skip the hassle and let us handle your daily tasks while you sit
+                back, relax and experience tranquility like never before!
+              </h3>
+
+              <MessageUs />
+            </TextDiv>
+            <BannerImg>
+              <img src={HomeBanner} alt="Home Banner" />
+            </BannerImg>
+          </div>
         </Banner>
         <Title>
           <h1>How it works</h1>
@@ -96,7 +100,7 @@ const HomePage = () => {
           <UtilityCard
             icon={<ServicesBubble />}
             description="Make custom requests and we’ll deliver as long as it’s anywhere within Nigeria or Dubai."
-            title="Custom Services"
+            title="Custom & Concierge Services"
           />
         </Utilities>
         <GiddyUp>
@@ -134,6 +138,9 @@ const HomePage = () => {
 const Container = styled.div``;
 const Body = styled.div`
   height: fit-content;
+  margin-top: 55px;
+  ${mobile({ marginTop: "48px" })}
+  ${tab({ marginTop: "48px" })}
 `;
 const Banner = styled.div`
   display: flex;
@@ -141,60 +148,199 @@ const Banner = styled.div`
   background-color: rgba(32, 148, 0, 0.2);
   padding: 40px;
   padding-top: 30px;
+
+  div {
+    display: flex;
+
+    ${fourK({
+      display: "flex",
+      width: "fit-content",
+      marginLeft: "auto",
+      marginRight: "auto",
+      maxWidth: "2000px",
+    })}
+    ${mobile({
+      justifyContent: "center",
+      alignItems: "center",
+    })}
+        ${tab({
+      justifyContent: "center",
+      alignItems: "center",
+    })}
+  }
+
+  ${mobile({
+    position: "relative",
+    height: "500px",
+    maxHeight: "fit-content",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "20px",
+    paddingBottom: "100px",
+  })}
+  ${tab({
+    position: "relative",
+    height: "500px",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "20px",
+  })}
 `;
 const BannerImg = styled.div`
+  ${mobile({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+  })}
+  ${tab({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+  })}
   flex: 1;
+
   img {
     transform: scale(0.9);
+
+    ${mobile({
+      transform: "scale(0.45)",
+    })}
+
+    ${tab({
+      transform: "scale(0.45)",
+    })}
   }
 `;
 const TextDiv = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-end;
   text-align: left;
-  flex: 1;
+  flex: 1.5;
+  margin-left: 40px;
+  margin-bottom: 40px;
+
+  ${tab({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
+  ${mobile({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
+
+
   h1 {
     margin: 0;
     padding: 0;
     color: rgba(32, 148, 0, 1);
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
     line-height: 60px;
     vertical-align: top;
+    ${mobile({
+      fontSize: "24px",
+      lineHeight: "26px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "220px",
+    })}
+    ${tab({
+      fontSize: "24px",
+      lineHeight: "26px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "250px",
+    })}
   }
   h3 {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.85);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     width: 80%;
     margin-bottom: 20px;
     line-height: 35px;
     letter-spacing: 4%;
     vertical-align: top;
+    ${mobile({
+      lineHeight: "21.6px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    })}
+    ${tab({
+      lineHeight: "21.6px",
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    })}
   }
 `;
 const Cards = styled.div`
-  height: 300px;
-  padding: 10px 40px;
+  height: 260px;
+  padding: 50px 40px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-top: 0px;
+  margin-top: -15px;
+  max-width: 2000px;
+  max-height: 460px;
+  height: fit-content;
+  ${mobile({
+    flexWrap: "noWrap",
+    flexDirection: "column",
+    width: "100vw",
+    height: "700px",
+    padding: "0",
+    marginTop: "0",
+  })}
+  ${tab({
+    flexWrap: "noWrap",
+    flexDirection: "column",
+    width: "100vw",
+    height: "700px",
+    padding: "0",
+    marginTop: "0",
+    paddingBottom: "50px",
+    maxHeight: "fit-content",
+  })}
 `;
 const Title = styled.div`
-  margin-top: 10px;
+  margin-top: 50px;
   text-align: center;
-  width: 45%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
+  ${tab({ width: "80%", marginBottom: "-20px" })}
+  ${mobile({ width: "90%", marginBottom: "-20px" })}
   span {
     display: flex;
 
@@ -204,8 +350,10 @@ const Title = styled.div`
       margin: 0;
       padding: 0;
       color: black;
-      font-weight: 500;
+      font-weight: 600;
       margin-right: 10px;
+      ${tab({ fontSize: "22px" })}
+      ${mobile({ fontSize: "22px" })}
     }
     h2 {
       margin-left: 20px;
@@ -215,6 +363,8 @@ const Title = styled.div`
       padding: 0;
       color: rgba(32, 148, 0, 1);
       font-weight: 600;
+      ${tab({ fontSize: "22px" })}
+      ${mobile({ fontSize: "22px" })}
     }
   }
   h1 {
@@ -223,7 +373,9 @@ const Title = styled.div`
     margin: 0;
     padding: 0;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
+    ${mobile({ fontSize: "23px", lineHeight: "30px", paddingBottom: "35px" })}
+    ${tab({ fontSize: "23px", lineHeight: "30px", paddingBottom: "35px" })}
   }
   h2 {
     margin-left: 20px;
@@ -233,6 +385,8 @@ const Title = styled.div`
     padding: 0;
     color: rgba(32, 148, 0, 1);
     font-weight: 600;
+    ${mobile({ fontSize: "22px" })}
+    ${tab({ fontSize: "22px" })}
   }
   h3 {
     font-size: 40px;
@@ -254,6 +408,8 @@ const Utilities = styled.div`
 
   background-color: rgba(32, 148, 0, 0.05);
   box-shadow: 0px 4px 4px 0px rgba(32, 148, 0, 0.2);
+  ${mobile({ display: "flex", flexDirection: "column" })}
+  ${tab({ gridTemplateColumns: "auto auto" })}
 `;
 const GiddyUp = styled.div`
   display: flex;
@@ -261,9 +417,50 @@ const GiddyUp = styled.div`
   align-items: center;
   height: 600px;
   padding: 20px 50px;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  ${mobile({
+    position: "relative",
+    height: "fit-Content",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "20px",
+    paddingBottom: "30px",
+  })}
+  ${tab({
+    position: "relative",
+    height: "fit-Content",
+    justifyContent: "center",
+    width: "100vw",
+    display: "block",
+    padding: "0",
+    paddingTop: "20px",
+    paddingBottom: "30px",
+  })}
 `;
 const GiddyUpSVG = styled.div`
   flex: 1;
+  ${mobile({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+    transform: "scale(0.6)",
+  })}
+  ${tab({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    display: "flex",
+    justifyContent: "center",
+    transform: "scale(0.6)",
+  })}
 `;
 const GiddyUpTextContent = styled.div`
   flex: 1;
@@ -271,9 +468,34 @@ const GiddyUpTextContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
+  ${mobile({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
+  ${tab({
+    textAlign: "center",
+    margin: "0",
+    justifyContent: "space-between",
+    marginLeft: "auto",
+    marginRight: "auto",
+  })}
+
   span {
     display: flex;
     width: 35%;
+    ${mobile({
+      width: "100%",
+      marginBottom: "220px",
+      justifyContent: "center",
+    })}
+    ${tab({
+      width: "100%",
+      marginBottom: "220px",
+      justifyContent: "center",
+    })}
     h1 {
       font-size: 35px;
       line-height: 60px;
@@ -282,6 +504,14 @@ const GiddyUpTextContent = styled.div`
       color: black;
       font-weight: 500;
       margin-right: 10px;
+      ${mobile({
+        fontSize: "30px",
+        marginRight: "5px",
+      })}
+      ${tab({
+        fontSize: "30px",
+        marginRight: "5px",
+      })}
     }
     h2 {
       margin-left: 20px;
@@ -291,6 +521,12 @@ const GiddyUpTextContent = styled.div`
       padding: 0;
       color: rgba(32, 148, 0, 1);
       font-weight: 600;
+      ${mobile({
+        fontSize: "30px",
+      })}
+      ${tab({
+        fontSize: "30px",
+      })}
     }
   }
   h3 {
@@ -298,15 +534,42 @@ const GiddyUpTextContent = styled.div`
     padding: 0;
     font-weight: 500;
     line-height: 45px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    ${mobile({
+      textAlign: "center",
+      fontSize: "20px",
+      lineHeight: "26px",
+      width: "75%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "20px",
+    })}
+    ${tab({
+      textAlign: "center",
+      fontSize: "20px",
+      lineHeight: "26px",
+      width: "75%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "20px",
+    })}
   }
   div {
     width: 80%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    ${mobile({
+      width: "100%",
+      justifyContent: "center",
+      transform: "scale(0.9)",
+    })}
+    ${tab({
+      width: "100%",
+      justifyContent: "center",
+    })}
   }
 `;
 
