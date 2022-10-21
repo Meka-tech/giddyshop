@@ -10,17 +10,12 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsConditions from "./Pages/TermsConditions";
 import { useEffect } from "react";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 function App() {
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
-  // useEffect(() => {
-  //   scrollToTop();
-  // });
+  useEffect(() => {
+    Aos.init({ duration: 1500, once: true });
+  }, []);
 
   return (
     <div className="App">

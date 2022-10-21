@@ -7,8 +7,8 @@ import { mobile } from "../../responsive";
 const Dropdown = ({ active }) => {
   const [dropdownActive, setDropdownActive] = useState(false);
 
-  const OnClick = () => {
-    setDropdownActive(true);
+  const Toggle = () => {
+    setDropdownActive(!dropdownActive);
   };
 
   const useOutsideAlerter = (ref) => {
@@ -32,7 +32,7 @@ const Dropdown = ({ active }) => {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
   return (
-    <Container ref={wrapperRef} onClick={() => OnClick()}>
+    <Container ref={wrapperRef} onClick={() => Toggle()}>
       <DropdownIcon />
       <NavContainer style={{ display: dropdownActive ? "flex" : "none" }}>
         <Link to="/company/contact-us" style={{ textDecoration: "none" }}>

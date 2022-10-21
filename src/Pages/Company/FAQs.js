@@ -29,7 +29,7 @@ const FAQs = () => {
           </Title>
           <FAQElement
             question="What’s the fastest way to reach us?"
-            answer="We give quick replies on all our socails but we are active 24/7 on our WhatsApp business account "
+            answer="We give quick replies on all our socials but we are active 24/7 on our WhatsApp business account "
           />
           <FAQElement
             question="What are the service fee charges?"
@@ -104,11 +104,11 @@ const Banner = styled.div`
 
   ${tab({
     height: "250px",
-    backgroundImage: `url(${FAQbannerMobile})`,
+    backgroundImage: `url(${FAQbannerMobile})`
   })}
   ${mobile({
     height: "250px",
-    backgroundImage: `url(${FAQbannerMobile})`,
+    backgroundImage: `url(${FAQbannerMobile})`
   })}
 
   h1 {
@@ -122,13 +122,13 @@ const Banner = styled.div`
       fontSize: "24px",
       width: "40%",
       right: "120px",
-      lineHeight: "29.26px",
+      lineHeight: "29.26px"
     })}
     ${mobile({
       fontSize: "24px",
       width: "40%",
       right: "120px",
-      lineHeight: "29.26px",
+      lineHeight: "29.26px"
     })}
   }
 `;

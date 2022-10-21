@@ -34,15 +34,19 @@ const ContactUs = () => {
             icon={<WhatsappBubble />}
             description="Need help right now? Contact our customer care service via WhatsApp."
             title="Whatsapp"
-            details="+2348072009224"
+            header1="Nigeria:"
+            details=" +2348072009224"
+            header2="UAE: "
+            details2=" +971581885291"
             BorderRadius={true}
           />
           <Card
             icon={<Livechat />}
             description="Need help right now? Contact our customer care service via WhatsApp. "
             title="Livechat"
-            details="GiddyShoplivechat"
+            details="Giddylivechat"
             BorderRadius={true}
+            disable={true}
           />
           <Card
             icon={<EmailBubble />}

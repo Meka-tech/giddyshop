@@ -19,8 +19,9 @@ import { ReactComponent as OVCBubble } from "../Images/UtilityCardIcon/OVCBubble
 import { ReactComponent as TransferBubble } from "../Images/UtilityCardIcon/TransferBubble.svg";
 import { ReactComponent as MoneyBubble } from "../Images/UtilityCardIcon/MoneyBubble.svg";
 import { ReactComponent as PaymentBubble } from "../Images/UtilityCardIcon/PaymentBubble.svg";
+import { ReactComponent as EscrowBubble } from "../Images/UtilityCardIcon/EscrowBubble.svg";
 import UtilityCard from "../Components/Card/UtilityCard";
-import { ReactComponent as Woman } from "../Images/SmileWoman.svg";
+
 import FooterPay from "../Components/Footer/FooterPay";
 
 const GiddyPay = () => {
@@ -36,9 +37,9 @@ const GiddyPay = () => {
                 all your monetary needs
               </h1>
               <h3>
-                Skip the inconvinece of having to pay bills or perform online
+                Skip the inconvenience of having to pay bills or perform online
                 transactions and let us sort out all your financial needs
-                swiftly with no risks at all.
+                swiftly with less risks.
               </h3>
               <span>
                 <MessageUs />
@@ -110,9 +111,14 @@ const GiddyPay = () => {
             description="Make instant and secure payments with perfect money at an ideal level."
             title="Perfect Money"
           />
+          <UtilityCard
+            icon={<EscrowBubble />}
+            description="Perform secured domestic and international escrow services at a good rate."
+            title="Escrow Services"
+          />
         </Utilities>
         <Aside>
-          <AsideTextContent>
+          <AsideTextContent data-aos="fade-right">
             <span>
               {" "}
               <div>
@@ -146,7 +152,9 @@ const GiddyPay = () => {
             </div>
           </AsideTextContent>
           <AsideSVG>
-            <img src={SmileWoman} alt="Woman Smiling" />
+            <div data-aos="fade-left">
+              <img src={SmileWoman} alt="Woman Smiling" />
+            </div>
           </AsideSVG>
         </Aside>
       </Body>
@@ -175,15 +183,15 @@ const Banner = styled.div`
       width: "fit-content",
       marginLeft: "auto",
       marginRight: "auto",
-      maxWidth: "2000px",
+      maxWidth: "2000px"
     })}
     ${mobile({
       justifyContent: "center",
-      alignItems: "center",
+      alignItems: "center"
     })}
         ${tab({
       justifyContent: "center",
-      alignItems: "center",
+      alignItems: "center"
     })}
   }
   ${tab({
@@ -195,7 +203,7 @@ const Banner = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "20px",
-    paddingBottom: "40px",
+    paddingBottom: "40px"
   })}
   ${mobile({
     position: "relative",
@@ -205,7 +213,7 @@ const Banner = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "20px",
-    paddingBottom: "40px",
+    paddingBottom: "40px"
   })}
 `;
 const BannerImg = styled.div`
@@ -217,7 +225,7 @@ const BannerImg = styled.div`
     display: "flex",
     justifyContent: "center",
     transform: "scale(0.7)",
-    marginTop: "80px",
+    marginTop: "80px"
   })}
   ${mobile({
     position: "absolute",
@@ -227,7 +235,7 @@ const BannerImg = styled.div`
     display: "flex",
     justifyContent: "center",
     transform: "scale(0.7)",
-    marginTop: "80px",
+    marginTop: "80px"
   })}
 
   flex: 1;
@@ -244,7 +252,7 @@ const TextDiv = styled.div`
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
 
   ${mobile({
@@ -252,7 +260,7 @@ const TextDiv = styled.div`
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
   h1 {
     margin: 0;
@@ -270,7 +278,7 @@ const TextDiv = styled.div`
       width: "70%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "300px",
+      marginBottom: "300px"
     })}
     ${mobile({
       fontSize: "24px",
@@ -278,7 +286,7 @@ const TextDiv = styled.div`
       width: "70%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "300px",
+      marginBottom: "300px"
     })}
   }
   h3 {
@@ -296,55 +304,45 @@ const TextDiv = styled.div`
       lineHeight: "21.6px",
       width: "70%",
       marginLeft: "auto",
-      marginRight: "auto",
+      marginRight: "auto"
     })}
     ${mobile({
       lineHeight: "21.6px",
       width: "70%",
       marginLeft: "auto",
-      marginRight: "auto",
+      marginRight: "auto"
     })}
   }
   div {
     ${mobile({
       marginLeft: "auto",
       marginRight: "auto",
-      transform: "scale(0.95)",
+      transform: "scale(0.95)"
     })}
   }
 `;
 const Cards = styled.div`
-  height: 260px;
-  padding: 50px 40px;
-  padding-top: 0px;
+  height: fit-content;
+  padding: 10px 40px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
   max-width: 2000px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 460px;
-  height: fit-content;
-  ${mobile({
-    flexWrap: "noWrap",
-    flexDirection: "column",
-    width: "100vw",
-    height: "700px",
-    maxHeight: "fit-content",
-    padding: "0",
-    marginTop: "0",
-    paddingBottom: "50px",
-  })}
   ${tab({
-    flexWrap: "noWrap",
     flexDirection: "column",
     width: "100vw",
-    height: "700px",
-    padding: "0",
-    marginTop: "0",
-    paddingBottom: "50px",
-    maxHeight: "fit-content",
+    height: "600px",
+    padding: "20px 0px",
+    marginTop: "0"
+  })}
+  ${mobile({
+    flexDirection: "column",
+    width: "100vw",
+    height: "600px",
+    padding: "20px 0px",
+    marginTop: "0"
   })}
 `;
 const Title = styled.div`
@@ -397,14 +395,14 @@ const Title = styled.div`
       lineHeight: "30px",
       paddingBottom: "20px",
       marginBottom: "15px",
-      marginTop: "10px",
+      marginTop: "10px"
     })}
     ${mobile({
       fontSize: "23px",
       lineHeight: "30px",
       paddingBottom: "20px",
       marginBottom: "15px",
-      marginTop: "10px",
+      marginTop: "10px"
     })}
   }
   h2 {
@@ -459,7 +457,7 @@ const Aside = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "50px",
-    paddingBottom: "100px",
+    paddingBottom: "100px"
   })}
   ${mobile({
     position: "relative",
@@ -469,7 +467,7 @@ const Aside = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "50px",
-    paddingBottom: "100px",
+    paddingBottom: "100px"
   })}
 `;
 const AsideSVG = styled.div`
@@ -483,7 +481,7 @@ const AsideSVG = styled.div`
     display: "flex",
     justifyContent: "center",
     transform: "scale(0.6)",
-    marginTop: "120px",
+    marginTop: "120px"
   })}
   ${mobile({
     position: "absolute",
@@ -493,15 +491,18 @@ const AsideSVG = styled.div`
     display: "flex",
     justifyContent: "center",
     transform: "scale(0.6)",
-    marginTop: "120px",
+    marginTop: "120px"
   })}
+ 
   img {
     transform: scale(1);
     ${tab({
       transform: "scale(0.85)",
+      objectFit: "cover"
     })}
     ${mobile({
       transform: "scale(0.85)",
+      objectFit: "cover"
     })}
   }
 `;
@@ -516,14 +517,14 @@ const AsideTextContent = styled.div`
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
   ${mobile({
     textAlign: "center",
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
 
   span {
@@ -534,21 +535,21 @@ const AsideTextContent = styled.div`
       display: flex;
       flex-direction: column;
       ${tab({
-        marginBottom: "300px",
+        marginBottom: "300px"
       })}
       ${mobile({
-        marginBottom: "300px",
+        marginBottom: "300px"
       })}
     }
     ${tab({
       width: "100%",
       marginBottom: "0px",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
     ${mobile({
       width: "100%",
       marginBottom: "0px",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
     h1 {
       font-size: 35px;
@@ -560,11 +561,11 @@ const AsideTextContent = styled.div`
       margin-right: 10px;
       ${tab({
         fontSize: "30px",
-        marginRight: "5px",
+        marginRight: "5px"
       })}
       ${mobile({
         fontSize: "30px",
-        marginRight: "5px",
+        marginRight: "5px"
       })}
     }
     h2 {
@@ -577,10 +578,10 @@ const AsideTextContent = styled.div`
       color: rgba(32, 148, 0, 1);
       font-weight: 600;
       ${tab({
-        fontSize: "30px",
+        fontSize: "30px"
       })}
       ${mobile({
-        fontSize: "30px",
+        fontSize: "30px"
       })}
     }
   }
@@ -601,7 +602,7 @@ const AsideTextContent = styled.div`
       width: "75%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "20px",
+      marginBottom: "20px"
     })}
     ${mobile({
       textAlign: "center",
@@ -610,7 +611,7 @@ const AsideTextContent = styled.div`
       width: "75%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "20px",
+      marginBottom: "20px"
     })}
   }
   div {
@@ -619,11 +620,11 @@ const AsideTextContent = styled.div`
     justify-content: flex-start;
     ${tab({
       width: "100%",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
     ${mobile({
       width: "100%",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
   }
 `;

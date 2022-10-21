@@ -29,7 +29,7 @@ const Footer = () => {
               <Facebook style={{ cursor: "pointer" }} />
             </a>
             <a
-              href="https://wa.me/message/QHH7NMUFHUV2L1"
+              href="https://wa.link/rybeor"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
@@ -84,7 +84,7 @@ const Footer = () => {
         </OtherColumns>
         <OtherColumns>
           <h1>Help</h1>
-          <h3>Live chat</h3>
+          <h3>Livechat</h3>
           <Link
             to="/company/contact-us"
             style={{ textDecoration: "none", color: "black" }}
@@ -114,24 +114,32 @@ const Footer = () => {
           </Link>
         </OtherColumns>
       </Links>
+      <CopyRight>
+        {" "}
+        <h1>© 2022 GiddyShop. All rights reserved</h1>
+      </CopyRight>
     </Container>
   );
 };
 const Container = styled.div`
+  position: relative;
   background-color: rgba(32, 148, 0, 0.1);
   height: 320px;
   padding: 10px;
   display: flex;
   font-family: "Montserrat", sans-serif;
+  ${tab({
+    paddingBottom: "60px",
+  })}
   ${mobile({
     flexDirection: "column",
     padding: "0px",
     height: "fit-content",
-    paddingBottom: "40px",
+    paddingBottom: "50px",
   })}
 `;
 const FirstColumn = styled.div`
-  height: 40%;
+  height: 58%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -220,6 +228,32 @@ const OtherColumns = styled.div`
     font-weight: 400;
     margin-bottom: 15px;
     cursor: pointer;
+  }
+`;
+const CopyRight = styled.div`
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  ${tab({
+    marginBottom: "10px",
+  })}
+  ${mobile({
+    marginBottom: "10px",
+  })}
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    ${mobile({
+      fontSize: "12px",
+    })}
   }
 `;
 export default Footer;

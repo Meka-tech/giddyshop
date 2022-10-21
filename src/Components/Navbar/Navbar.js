@@ -64,8 +64,20 @@ const Navbar = ({ active, dropdownActive }) => {
             </div>
           </NavItem>
           <Button>
-            <h1>GiddyAsk</h1>
+            <Link to="/company/contact-us" style={{ textDecoration: "none" }}>
+              <h1>GiddyAsk</h1>
+            </Link>
           </Button>
+          <a
+            href="https://forms.gle/oZTpR7winpRvW76p9"
+            target="_blank"
+            style={{ textDecoration: "none", color: "black", padding: "0" }}
+            rel="noreferrer"
+          >
+            <SignUp>
+              <h1>Sign up</h1>
+            </SignUp>
+          </a>
         </NavItemContainer>
         <HamburgerDiv open={open} onClick={() => OnClick()}>
           {open ? <EX /> : <MenuIcon />}
@@ -77,7 +89,7 @@ const Navbar = ({ active, dropdownActive }) => {
           style={{
             textDecoration: "none",
             color: "black",
-            transition: "0.1s all ease-in-out",
+            transition: "0.1s all ease-in-out"
           }}
         >
           <MobileNavItem>Home</MobileNavItem>
@@ -95,12 +107,27 @@ const Navbar = ({ active, dropdownActive }) => {
             style={{ textDecoration: "none", color: "black" }}
           >
             Company
-          </Link>{" "}
+          </Link>
           <Dropdown />
         </MobileNavItem>
-        <Button style={{ display: open ? "flex" : "none" }}>
-          <h1>GiddyAsk</h1>
-        </Button>
+
+        <a
+          href="https://forms.gle/oZTpR7winpRvW76p9"
+          target="_blank"
+          style={{ textDecoration: "none", color: "black" }}
+          rel="noreferrer"
+        >
+          <MobileNavItem>Sign Up</MobileNavItem>
+        </a>
+
+        <Link
+          to="/company/about-us"
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          <Button style={{ display: open ? "flex" : "none" }}>
+            <h1>GiddyAsk</h1>
+          </Button>
+        </Link>
       </MobileNav>
     </Fragment>
   );
@@ -114,7 +141,7 @@ const Fragment = styled.div`
   position: fixed;
 
   ${mobile({
-    position: "fixed",
+    position: "fixed"
   })};
 `;
 
@@ -133,12 +160,12 @@ const Container = styled.div`
   ${mobile({
     padding: "5px 0px",
     position: "relative",
-    zIndex: "100",
+    zIndex: "100"
   })}
   ${tab({
     padding: "5px 0px",
     position: "relative",
-    zIndex: "100",
+    zIndex: "100"
   })}
 `;
 const LogoItem = styled.div`
@@ -156,13 +183,13 @@ const LogoItem = styled.div`
   }
 `;
 const NavItemContainer = styled.div`
-  flex: 0.9;
+  flex: 0.65;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 80px;
   ${mobile({ display: "none" })}
-  ${tab({ marginRight: "0px", flex: "1" })}
+  ${tab({ marginRight: "0px", flex: "1.5" })}
 `;
 const NavItem = styled.div`
   display: flex;
@@ -189,7 +216,7 @@ const Button = styled.div`
   background-color: rgba(32, 148, 0, 1);
   border-radius: 10px;
   padding: 10px 20px;
-  margin-left: 100px;
+  margin-left: 10px;
   cursor: pointer;
   display: flex;
 
@@ -203,13 +230,13 @@ const Button = styled.div`
   ${mobile({
     marginLeft: "auto",
     marginRight: "auto",
-    marginTop: "100px",
-    transform: "scale(0.9)",
+    marginTop: "auto",
+    transform: "scale(0.9)"
   })}
   ${tab({
     marginLeft: "auto",
     marginRight: "auto",
-    transform: "scale(0.7)",
+    transform: "scale(0.7)"
   })}
 `;
 const HamburgerDiv = styled.div`
@@ -240,7 +267,7 @@ const MobileNavItem = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  height: 50px;
+  height: 60px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -256,5 +283,22 @@ const MobileNavItem = styled.div`
     color: black;
   }
 `;
-
+const SignUp = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ${tab({ marginRight: "10px" })}
+  border : 1px solid rgba(32, 148, 0, 1);
+  border-radius: 3px;
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    ${tab({ fontSize: "10px", padding: "5px" })}
+  }
+`;
 export default Navbar;

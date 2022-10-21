@@ -17,9 +17,10 @@ const AboutUs = () => {
             <TextDiv>
               <h1>About GiddyShop</h1>
               <h3>
-                We arrised from the inconvience of dealing with unrelaible
-                service providers coupled with essesive costs. GiddyShop is here
-                to change all of that, allowing you live life without stress.
+                We arrised from the inconvenience of dealing with unrelaible
+                service providers coupled with excessive costs. GiddyShop is
+                here to change all of that, allowing you live life without
+                stress.
               </h3>
             </TextDiv>
             <BannerImg>
@@ -29,9 +30,11 @@ const AboutUs = () => {
         </Banner>
         <Aside>
           <AsideSVG align="start">
-            <img src={SingleMan} alt="single Man" />
+            <div data-aos="fade-right">
+              <img src={SingleMan} alt="single Man" />
+            </div>
           </AsideSVG>
-          <AsideTextContent>
+          <AsideTextContent data-aos="fade-left">
             {" "}
             <h1>More Than a Company</h1>
             <h3>
@@ -39,14 +42,14 @@ const AboutUs = () => {
               without having to worry about outstanding or incoming bills/tasks.
             </h3>
             <h3>
-              GiddyShop is a one-stop service rendering platform cathering for
+              GiddyShop is a one-stop service rendering platform catering for
               all your needs, be it monetary, personal or other important needs
               in your everyday life.
             </h3>
           </AsideTextContent>
         </Aside>
         <Aside>
-          <AsideTextContent>
+          <AsideTextContent data-aos="fade-right">
             {" "}
             <h1>Our Objective</h1>
             <h3>
@@ -60,7 +63,10 @@ const AboutUs = () => {
             </h3>
           </AsideTextContent>
           <AsideSVG align="end">
-            <img src={TwoWomen} alt="Two Women" />
+            <div data-aos="fade-left">
+              {" "}
+              <img src={TwoWomen} alt="Two Women" />
+            </div>
           </AsideSVG>
         </Aside>
       </Body>
@@ -96,7 +102,7 @@ const Banner = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "40px",
-    paddingBottom: "40px",
+    paddingBottom: "40px"
   })}
   ${mobile({
     position: "relative",
@@ -106,7 +112,7 @@ const Banner = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "40px",
-    paddingBottom: "40px",
+    paddingBottom: "40px"
   })}
 `;
 const BannerImg = styled.div`
@@ -116,7 +122,7 @@ const BannerImg = styled.div`
     left: "0",
     right: "0",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "center"
   })}
   ${mobile({
     position: "absolute",
@@ -124,18 +130,18 @@ const BannerImg = styled.div`
     left: "0",
     right: "0",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "center"
   })}
   flex: 1;
   img {
     transform: scale(0.8);
     ${tab({
       transform: "scale(0.45)",
-      marginTop: "20px",
+      marginTop: "20px"
     })}
     ${mobile({
       transform: "scale(0.45)",
-      marginTop: "20px",
+      marginTop: "20px"
     })}
   }
 `;
@@ -152,14 +158,14 @@ const TextDiv = styled.div`
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
   ${mobile({
     textAlign: "center",
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
   h1 {
     margin: 0;
@@ -177,7 +183,7 @@ const TextDiv = styled.div`
       width: "70%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "220px",
+      marginBottom: "220px"
     })}
     ${mobile({
       fontSize: "24px",
@@ -185,7 +191,7 @@ const TextDiv = styled.div`
       width: "70%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "220px",
+      marginBottom: "220px"
     })}
   }
   h3 {
@@ -203,13 +209,13 @@ const TextDiv = styled.div`
       lineHeight: "21.6px",
       width: "70%",
       marginLeft: "auto",
-      marginRight: "auto",
+      marginRight: "auto"
     })}
     ${mobile({
       lineHeight: "21.6px",
       width: "70%",
       marginLeft: "auto",
-      marginRight: "auto",
+      marginRight: "auto"
     })}
   }
 `;
@@ -287,7 +293,7 @@ const Aside = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "40px",
-    paddingBottom: "30px",
+    paddingBottom: "30px"
   })}
   ${mobile({
     position: "relative",
@@ -297,7 +303,7 @@ const Aside = styled.div`
     display: "block",
     padding: "0",
     paddingTop: "40px",
-    paddingBottom: "30px",
+    paddingBottom: "30px"
   })}
   h1 {
     color: rgba(32, 148, 0, 1);
@@ -320,7 +326,7 @@ const AsideSVG = styled.div`
     right: "0",
     display: "flex",
     justifyContent: "center",
-    transform: "scale(0.6)",
+    transform: "scale(0.6)"
   })}
   ${mobile({
     position: "absolute",
@@ -329,16 +335,16 @@ const AsideSVG = styled.div`
     right: "0",
     display: "flex",
     justifyContent: "center",
-    transform: "scale(0.6)",
+    transform: "scale(0.6)"
   })}
 
   img {
     transform: scale(0.8);
     ${tab({
-      marginTop: "80px",
+      marginTop: "80px"
     })}
     ${mobile({
-      marginTop: "80px",
+      marginTop: "80px"
     })}
   }
 `;
@@ -352,14 +358,14 @@ const AsideTextContent = styled.div`
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
   ${mobile({
     textAlign: "center",
     margin: "0",
     justifyContent: "space-between",
     marginLeft: "auto",
-    marginRight: "auto",
+    marginRight: "auto"
   })}
   span {
     display: flex;
@@ -367,12 +373,12 @@ const AsideTextContent = styled.div`
     ${tab({
       width: "100%",
       marginBottom: "220px",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
     ${mobile({
       width: "100%",
       marginBottom: "220px",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
     h1 {
       font-size: 35px;
@@ -384,11 +390,11 @@ const AsideTextContent = styled.div`
       margin-right: 10px;
       ${tab({
         fontSize: "30px",
-        marginRight: "5px",
+        marginRight: "5px"
       })}
       ${mobile({
         fontSize: "30px",
-        marginRight: "5px",
+        marginRight: "5px"
       })}
     }
     h2 {
@@ -401,10 +407,10 @@ const AsideTextContent = styled.div`
       color: rgba(32, 148, 0, 1);
       font-weight: 600;
       ${tab({
-        fontSize: "30px",
+        fontSize: "30px"
       })}
       ${mobile({
-        fontSize: "30px",
+        fontSize: "30px"
       })}
     }
   }
@@ -420,11 +426,11 @@ const AsideTextContent = styled.div`
     margin-bottom: -20px;
     ${tab({
       marginBottom: "300px",
-      width: "100%",
+      width: "100%"
     })}
     ${mobile({
       marginBottom: "300px",
-      width: "100%",
+      width: "100%"
     })}
   }
 
@@ -445,7 +451,7 @@ const AsideTextContent = styled.div`
       width: "75%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "20px",
+      marginBottom: "20px"
     })}
     ${mobile({
       textAlign: "center",
@@ -454,7 +460,7 @@ const AsideTextContent = styled.div`
       width: "75%",
       marginLeft: "auto",
       marginRight: "auto",
-      marginBottom: "20px",
+      marginBottom: "20px"
     })}
   }
   div {
@@ -463,11 +469,11 @@ const AsideTextContent = styled.div`
     justify-content: flex-start;
     ${tab({
       width: "100%",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
     ${mobile({
       width: "100%",
-      justifyContent: "center",
+      justifyContent: "center"
     })}
   }
 `;

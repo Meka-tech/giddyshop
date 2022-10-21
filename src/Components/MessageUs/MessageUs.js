@@ -6,7 +6,7 @@ const MessageUs = () => {
   return (
     <Container>
       <a
-        href="https://wa.me/message/QHH7NMUFHUV2L1"
+        href="https://wa.link/rybeor"
         target="_blank"
         rel="noreferrer"
         style={{ textDecoration: "none" }}
