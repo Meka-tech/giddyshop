@@ -69,7 +69,7 @@ const Navbar = ({ active, dropdownActive }) => {
             </Link>
           </Button>
           <a
-            href="https://forms.gle/oZTpR7winpRvW76p9"
+            href="https://forms.gle/NNgVvTsCnjWcSpuk8"
             target="_blank"
             style={{ textDecoration: "none", color: "black", padding: "0" }}
             rel="noreferrer"
@@ -112,7 +112,7 @@ const Navbar = ({ active, dropdownActive }) => {
         </MobileNavItem>
 
         <a
-          href="https://forms.gle/oZTpR7winpRvW76p9"
+          href="https://forms.gle/NNgVvTsCnjWcSpuk8"
           target="_blank"
           style={{ textDecoration: "none", color: "black" }}
           rel="noreferrer"

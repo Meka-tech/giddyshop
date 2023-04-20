@@ -138,7 +138,7 @@ const HomePage = () => {
           <h1>Let’s know you better!</h1>
           <h2>Take some time off and fill out the form.</h2>
           <a
-            href="https://forms.gle/oZTpR7winpRvW76p9"
+            href="https://forms.gle/NNgVvTsCnjWcSpuk8"
             target="_blank"
             rel="noreferrer"
             style={{ textDecoration: "none", color: "white" }}
